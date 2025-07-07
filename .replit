@@ -1,15 +1,51 @@
-entrypoint = "main.py"
-modules = ["python-3.11"]
+# 🔁 Python cache and metadata
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+*.eggs/
 
-[nix]
-channel = "stable-24_05"
+# 📓 Jupyter Notebook artifacts
+.ipynb_checkpoints/
+*.ipynb~
 
-[unitTest]
-language = "python3"
+# 📁 Replit-specific config (optional)
+.replit
+*.swp
+*.swo
+.vscode/
 
-[gitHubImport]
-requiredFiles = [".replit", "replit.nix"]
+# 🖼️ OS-generated files
+.DS_Store
+Thumbs.db
 
-[deployment]
-run = ["python3", "main.py"]
-deploymentTarget = "cloudrun"
+# 📊 Data files — keep raw/processed folders, but ignore heavy data by default
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/external/*
+!data/external/.gitkeep
+
+# 📤 Model outputs and generated visualizations
+outputs/visuals/*
+!outputs/visuals/.gitkeep
+outputs/model_cards/*
+!outputs/model_cards/.gitkeep
+outputs/logs/*
+!outputs/logs/audit_trace_log.md
+!outputs/logs/risk_log.md
+
+# ⚙️ Configuration backups
+*.bak
+*.tmp
+*.log
+
+# 🔒 Sensitive files (if any)
+.env
+.env.*
+
+# 🧪 Optional test folders
+tests/
+
