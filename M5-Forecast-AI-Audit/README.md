@@ -1,86 +1,101 @@
-# 📊 M5 Forecast Accuracy + AI Audit Simulation
 
-**Part of the AI Clarity Project**  
-🟡 *"Illuminating AI. Clarifying Risk."*
+# 🔍 AI Audit of M5 Forecasting System
 
----
-
-## 📌 Overview
-
-This project evaluates and audits a machine learning model trained on the [M5 Forecasting Accuracy dataset](https://www.kaggle.com/competitions/m5-forecasting-accuracy) to simulate an explainability-driven audit of algorithmic decision-making (ADM).
-
-It uses SHAP, LIME, and DiCE to:
-- 📈 Explain model behavior and sales forecasts
-- 📎 Validate traceability from input to output
-- ⚖️ Align model behavior with AI governance expectations
-
-This structure is designed to reflect real-world audit conditions and is aligned to responsible AI frameworks including the **NIST AI Risk Management Framework**, **EU AI Act**, and internal control standards.
+**Project Title:**  
+AI Clarity Project – Auditing Forecast Accuracy Using SHAP, LIME, and DiCE  
+**Status:** Completed Audit Simulation | Public Educational Initiative
 
 ---
 
-## 🎯 Project Goals
+## 🧠 Overview
 
-- ✅ Evaluate forecast accuracy across multiple locations and departments
-- ✅ Apply **explainable AI (XAI)** tools to generate interpretable insights
-- ✅ Document audit trails, governance alignment, and risk logs
-- ✅ Showcase algorithmic transparency and model accountability
+This project simulates a comprehensive audit of an AI-driven Automated Decision-Making (ADM) system using the publicly available **M5 Forecasting Accuracy dataset** from Kaggle. The audit focused on verifying explainability, traceability, and governance compliance across a retail sales forecasting system that influenced critical business functions like inventory, pricing, and staffing.
+
+---
+
+## 🎯 Objectives
+
+- Identify which input variables most influenced sales forecasts
+- Evaluate if decisions aligned with governance boundaries and business control
+- Use **SHAP**, **LIME**, and **DiCE** to explain and validate model behavior
+- Test ADM output stability, fairness, and traceability
+- Align findings with:
+  - 🇪🇺 **EU AI Act** (Articles 13 & 14)
+  - 🇺🇸 **NIST AI Risk Management Framework (RMF)**
+  - 🌐 **OECD AI Principles**
+  - 🔎 **NIST Principles of Explainable AI**
 
 ---
 
 ## 🗂️ Project Structure
 
-| Folder | Purpose |
-|--------|---------|
-| `notebooks/` | Colab notebook containing full modeling and XAI audit pipeline |
-| `scripts/` | Modular Python scripts for training, explainability, and analysis |
-| `data/` | Raw, processed, and external data inputs |
-| `outputs/` | SHAP, LIME, DiCE outputs, risk logs, and model cards |
-| `docs/` | Governance mapping, audit methodology, limitations |
-| `posts/` | LinkedIn campaign drafts and Unicode-ready final posts |
-| `config/` | YAML files for reproducible model and XAI configuration |
-| `prompts/` | Prompts used to generate explainability content or analyses |
+- `M5_Forecasting_Audit_Final_Notebook_v2.ipynb`: Final Colab notebook with version-controlled cells, commentary, and output
+- `audit_visuals/`: Folder containing audit visuals formatted for Flourish Studio and LinkedIn
+- `outputs/`: Includes CSVs with SHAP, LIME, and DiCE explanations
+- `AI_Clarity_Audit_Workpaper_Template.docx`: Best-in-class audit documentation template
+- `README.md`: This file
 
 ---
 
-## 🧠 XAI Methods Used
+## ✅ Key Features
 
-- **SHAP (SHapley Additive exPlanations)**  
-  Explains feature contributions at the global and instance level
-
-- **LIME (Local Interpretable Model-agnostic Explanations)**  
-  Generates simplified surrogate models to explain individual predictions
-
-- **DiCE (Diverse Counterfactual Explanations)**  
-  Produces actionable counterfactuals to test ADM robustness and fairness
+- 4.5 years of retail data audited (2020–2025)
+- 75M+ records | $300M+ sales | 3,000+ items
+- End-to-end traceability: raw data → ADM → explainability tools → audit conclusions
+- Defensive coding, governance-first logic, and counterfactual testing
 
 ---
 
-## 🧾 Governance Features
+## 📊 Results
 
-- 📘 `audit_trace_log.md` — End-to-end traceability from input to ADM decision  
-- 📋 `risk_log.md` — Identified risks across compliance, operational, and reputational domains  
-- 📄 `model_card.md` — Documentation of model purpose, performance, and ethical considerations  
-- 📊 `docs/` — Mapped to NIST AI RMF and EU AI Act standards
-
----
-
-## 💼 Business Relevance
-
-The structure and outputs simulate what a real business or audit function would expect in:
-- SOX ITGC reviews for ML-driven forecasts
-- AI Explainability audits for ADM systems
-- Algorithmic accountability reporting
+- Found key drivers for sales (e.g., day-of-week, price, promotion)
+- Visualized counterfactuals showing how small changes flip ADM decisions
+- Identified potential risks in inconsistent tool agreement
+- Documented every step for reproducibility and compliance
 
 ---
 
-## 🧩 About This Project
+## 👤 Author
 
-This repository is part of the **AI Clarity Project**, a voluntary initiative promoting AI transparency and accountability.
+David Cortright  
+Founder of the **AI Clarity Project**  
+🔎 _“Illuminating AI. Clarifying Risk.”_  
+🧭 A voluntary initiative exploring AI transparency and decision governance.
 
-> 💡 *"How we describe AI influences how we understand AI — and how we manage the risks from using AI."*
+---
 
-Learn more at: [https://github.com/9901030513dad](https://github.com/9901030513dad)
+## 🔗 Links
 
+- 🔗 [LinkedIn Post Series](https://linkedin.com) _(Add link when published)_
+- 📘 [PDF Summary (Executive-Ready)](https://example.com/pdf) _(Optional if hosting PDF externally)_
+- 🧾 [Audit Template](AI_Clarity_Audit_Workpaper_Template.docx)
+
+---
+
+## 📜 Certifications
+
+- Certified AI & Algorithm Auditor (BABL AI)  
+- Certified Information Systems Security Professional (CISSP)  
+- Certified Internal Auditor (CIA)  
+- NIST AI RMF Architect Certified
+
+---
+
+## 📥 How to Use
+
+```bash
+# Clone the repository
+git clone https://github.com/YOUR-USERNAME/m5-forecasting-ai-audit.git
+
+# Open the notebook in Google Colab or JupyterLab
+```
+
+---
+
+## 📄 License
+
+This is a public, educational project and does not represent any employer.  
+No proprietary models or sensitive business data were used.
 ---
 
 ## 📄 License
